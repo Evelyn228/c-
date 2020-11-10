@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+void myprint(char s,int n)
+{
+    int i;
+    for(i=1;i<=n;i++)
+    {
+        printf("%c",s);
+
+    }
+}
+
+int main()
+{   int i,n,s,t;
+    scanf("%d",&n);
+    s=n-1;
+    t=1;
+    for(i=n;i>2;i--){
+        myprint(' ',s);//函数调用
+        myprint('*',t);//函数调用
+        printf("\n");
+        s--;
+        t=t+2;
+    }
+    return 0;
+}
+
