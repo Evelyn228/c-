@@ -1,0 +1,22 @@
+Say hello to integers？ Yes! 你没看错！ 现在我们来向整数说“你好~” 本题读入两个整数，然后输出对她们的问候语。
+
+输入格式:
+在一行中给出两个绝对值不超过32767的整数A和B，两数之间有一个空格
+
+输出格式:
+在一行中输出 "Hello, A and B!" （其中A和B用实际输入的整数代替）
+
+输入样例:
+1949 2015
+输出样例:
+Hello, 1949 and 2015!
+
+
+#include<stdio.h>
+int main()
+{
+    int A,B;
+    scanf("%d %d",&A,&B);
+    printf("Hello, %d and %d!",A,B);
+    return 0;
+}
